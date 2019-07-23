@@ -47,7 +47,7 @@ class Song
     song_name = file[1].chomp(".mp3").strip
     song = self.new_by_name(song_name)
     song.artist_name = file[0].strip
-    song.saved
+    song.save
     song
   end
 end
